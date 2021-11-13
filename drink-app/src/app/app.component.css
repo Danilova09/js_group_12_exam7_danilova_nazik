@@ -3,10 +3,6 @@
 }
 .main-block {
   width: 1200px;
-  border: 1px solid red;
   display: flex;
   margin: 70px auto;
-}
-.col-4, .col-8 {
-  border: 1px solid blue;
 }

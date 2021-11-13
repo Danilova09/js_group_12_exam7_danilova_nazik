@@ -15,5 +15,4 @@ export class OrderItemComponent {
     this.delete.emit();
   }
 
-
 }
