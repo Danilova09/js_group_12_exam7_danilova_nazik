@@ -1,11 +1,6 @@
 <div class="items-list">
-  <app-item></app-item>
-  <app-item></app-item>
-  <app-item></app-item>
-  <app-item></app-item>
-  <app-item></app-item>
-  <app-item></app-item>
-  <app-item></app-item>
-  <app-item></app-item>
-  <app-item></app-item>
+  <app-item *ngFor="let item of items; let i = index"
+  [title]="item.name"
+  [Price]="item.price"
+  [imgIcon]="item.imgIcon"></app-item>
 </div>

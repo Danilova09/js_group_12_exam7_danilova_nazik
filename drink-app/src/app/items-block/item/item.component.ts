@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.css']
 })
-export class ItemComponent implements OnInit {
+export class ItemComponent {
+  @Input() title = '';
+  @Input() Price = 0;
+  @Input() imgIcon = '';
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
