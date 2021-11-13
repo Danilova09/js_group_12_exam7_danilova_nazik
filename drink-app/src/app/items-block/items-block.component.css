@@ -1,7 +1,8 @@
 .items-list {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid black;
   justify-content: center;
   align-items: center;
+  background: #ededed;
+  border-radius: 10px;
 }

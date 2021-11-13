@@ -1,4 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-item',
@@ -6,9 +6,15 @@ import { Component, Input, Output } from '@angular/core';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent {
+  @Output() newDrink = new EventEmitter();
   @Input() title = '';
   @Input() Price = 0;
   @Input() imgIcon = '';
+  @Input() bgColor = '';
+  @Input() iconColor = '';
 
+  addNewDrink() {
+    this.newDrink.emit();
+  }
 
 }

@@ -1,10 +1,14 @@
 .items-list__item {
   border: 1px solid aqua;
-  cursor: pointer;
 }
 
 .card {
-  margin: 30px 10px;
+  margin: 20px 10px;
   padding: 0 30px;
+  color: black;
+  cursor: pointer;
+}
 
+.icons {
+  font-size: 30px;
 }

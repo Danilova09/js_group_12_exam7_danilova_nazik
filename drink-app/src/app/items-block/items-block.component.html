@@ -1,6 +1,21 @@
-<div class="items-list">
-  <app-item *ngFor="let item of items; let i = index"
-  [title]="item.name"
-  [Price]="item.price"
-  [imgIcon]="item.imgIcon"></app-item>
+<div class="row  mt-5">
+  <div class="items-list col-8">
+    <app-item *ngFor="let item of items; let i = index"
+              [title]="item.name"
+              [Price]="item.price"
+              [imgIcon]="item.imgIcon"
+              [bgColor]="item.bgColor"
+              [iconColor]="item.iconColor"
+              (newDrink)="getNewDrink(i)"
+    ></app-item>
+  </div>
+  <div class="col-4">
+    <h4>order</h4>
+    <app-order-item *ngFor="let order of items; let i = index;"
+    [title]="order.name"
+    [count]="order.count"
+    [price]="order.price"
+    (delete)="deleteItem(i)"></app-order-item>
+    <p class="mt-5">Price: {{ getPrice() }}</p>
+  </div>
 </div>

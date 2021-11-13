@@ -1,9 +1,9 @@
 <div class="items-list__item">
-  <div class="card">
+  <div class="card" [ngStyle]="{background: bgColor}"  (click)="addNewDrink()">
     <div class="card-body">
       <h5 class="title">{{ title }}</h5>
       <p>Price: {{Price}} KGS</p>
-      <p><i class="{{ imgIcon }}"></i></p>
+      <p><i class="{{ imgIcon }} icons" [ngStyle]="{color: iconColor}"></i></p>
     </div>
   </div>
 </div>
